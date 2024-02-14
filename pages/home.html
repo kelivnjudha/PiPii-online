@@ -545,6 +545,10 @@
                             stopTimer(); // Stop the timer when the quiz ends
                             gameContainer.innerHTML = `<p>All questions answered. Quiz completed! You scored ${score} out of ${questionList.length}.</p>`;
                             updateScoreboard(true)
+
+                            if(score === 10){
+                                window.open('../pages/flower.html',)
+                            }
                         }
                     });
                     choicesContainer.appendChild(choiceLink);
